@@ -10,6 +10,8 @@ import torch
 import torchvision.transforms as T
 import torchvision.transforms.functional as F
 
+import sys
+sys.path.append(os.path.join(os.getcwd(), "GroundingDINO"))
 from groundingdino.util.box_ops import box_xyxy_to_cxcywh
 from groundingdino.util.misc import interpolate
 
